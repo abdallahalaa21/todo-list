@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>To do list</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col s12 m8 offset-m2">
+                <div class="card">
+                    <div class="card-content">
+                        <span class="card-title black-text">To-do list</span>
+                        <form id="taskForm">
+                            <div class="inputField col s12">
+                                <input type="text" id="task" placeholder="NewTask">
+                            </div>
+                            <input type="button" value="Add Task" id="btn" class="btn darken-4" >
+                        </form>
+                    </div>
+                    <div class="card-action">
+                        <h5 id="taskTitle">Tasks</h5>
+                        <!-- <div class="input-field col s12">
+                            <input type="text" name="filter" id="filter" placeholder="Filter Tasks">
+                        </div> -->
+                        <ul id="tasks" class="collection s12">
+                            <!-- demo data -->
+                            <!-- <li class="tasks collection-item">
+                                <label>
+                                    <input type="checkbox" />
+                                    <span class="black-text">alvin</span>
+                                </label>
+                                <a href="#!" class="deleteElement secondary-content"><i class="material-icons red-text">close</i></a>
+                            </li>
+                            <li class="tasks collection-item">
+                                <label>
+                                    <input type="checkbox" />
+                                    <span class="black-text">alvin</span>
+                                </label>
+                                <a href="#!" class="deleteElement secondary-content"><i class="material-icons red-text">close</i></a>
+                            </li>
+                            <li class="tasks collection-item">
+                                <label>
+                                    <input type="checkbox" />
+                                    <span class="black-text">alvin</span>
+                                </label>
+                                <a href="#!" class="deleteElement secondary-content"><i class="material-icons red-text">close</i></a>
+                            </li>
+                            <li class="tasks collection-item">
+                                <label>
+                                    <input type="checkbox" />
+                                    <span class="black-text">alvin</span>
+                                </label>
+                                <a href="#!" class="deleteElement secondary-content"><i class="material-icons red-text">close</i></a>
+                            </li> -->
+                        </ul>
+                        <!-- <a href="#" class="clearTasks btn teal darken-4">Clear Tasks</a> -->
+                    </div>
+                    <div class="card-action">
+                        <h5 id="finishedTaskTittle">Finished Tasks</h5>
+                        <!-- <div class="input-field col s12">
+                            <input type="text" name="filterFinished" id="filterFinished" placeholder="Filter Finished Tasks">
+                        </div> -->
+                        <ul id="finishTasks" class="finishTasks collection s12">
+                            <!-- <li class="finishTasks collection-item">
+                                <label>
+                                    <input type="checkbox" class="filled-in" checked="checked" />
+                                    <span class="black-text"><del>alvin</del></span>
+                                </label>
+                                <a href="#!" class="deleteElement secondary-content"><i class="material-icons red-text">close</i></a>
+                            </li>
+                            <li class="finishTasks collection-item">
+                                <label>
+                                    <input type="checkbox" class="filled-in" checked="checked" />
+                                    <span class="black-text"><del>alvin</del></span>
+                                </label>
+                                <a href="#!" class="deleteElement secondary-content"><i class="material-icons red-text">close</i></a>
+                            </li>
+                            <li class="finishTasks collection-item">
+                                <label>
+                                    <input type="checkbox" checked="checked" />
+                                    <span class="black-text"><del>alvin</del></span>
+                                </label>
+                                <a href="#!" class="deleteElement secondary-content"><i class="material-icons red-text">close</i></a>
+                            </li> -->
+                        </ul>
+                        <!-- <a href="#" class="clearFinishTasks btn blue-grey darken-4 ">Clear Finished Tasks</a> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="main.js"></script>
+
+</body>
+
+</html>
